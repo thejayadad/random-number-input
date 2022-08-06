@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: monospace;
+             background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+        }
+        input {
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button {
+            padding: 10px;
+            width: 30%;
+            border-radius: 10px;
+            background-color: gray;
+            color: white;
+        }
+        p {
+            font-size: 5em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Get Random Number</h2>
+    <p id="num"></p>
+    <input type="number" id="min" placeholder="between">
+    <h3>&</h3>
+    <input type="number" id="max" placeholder="This">
+    <br>
+    <button onclick="document.getElementById('num').innerHTML = getNumber()">Get Number</button>
+    <script src="main.js">
+    </script>
+</body>
+</html>
